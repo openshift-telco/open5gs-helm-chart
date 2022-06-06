@@ -1,0 +1,8 @@
+commonLabels:
+  telgo-gitops/app: open5g
+
+resources:
+- 00-namespace-open5gcore.yaml
+- 00-namespace-open5gran.yaml
+- 01-argo-app-open5gcore.yaml
+- 01-argo-app-open5gran.yaml

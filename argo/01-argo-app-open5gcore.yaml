@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: open5gcore
-  namespace: openshift-gitops
+  namespace: telco-gitops
 spec:
   destination:
     name: in-cluster
@@ -10,7 +10,7 @@ spec:
     server: ''
   source:
     path: 5gcore
-    repoURL: 'https://github.com/openshift-telco/distributed-open5gs-helm-chart'
+    repoURL: 'https://github.com/williamcaban/open5gs-helm-chart'
     targetRevision: HEAD
   project: default
   syncPolicy:
