@@ -1,7 +1,5 @@
 FROM ubuntu:focal
 
-MAINTAINER Fatih Nar <fenari@gmail.com>
-
 ENV DEBIAN_FRONTEND noninteractive
 
 USER root

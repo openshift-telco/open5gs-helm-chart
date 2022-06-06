@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: open5gran
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: in-cluster
+    namespace: open5gran
+    server: ''
+  source:
+    path: 5gran
+    repoURL: 'https://github.com/openshift-telco/distributed-open5gs-helm-chart'
+    targetRevision: HEAD
+  project: default
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+
