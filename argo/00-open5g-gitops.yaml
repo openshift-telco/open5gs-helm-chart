@@ -15,7 +15,7 @@ metadata:
   name: open5g-gitops-custom-role
 rules:
 - apiGroups:
-  - agent-install.openshift.io
+  - '*'
   resources:
   - '*'
   verbs:
