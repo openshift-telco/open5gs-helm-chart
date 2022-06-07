@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: open5gcore
-  namespace: telco-gitops
+  namespace: open5g-gitops
 spec:
   destination:
     name: in-cluster
