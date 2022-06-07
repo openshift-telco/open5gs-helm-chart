@@ -3,7 +3,7 @@ commonLabels:
 
 resources:
 - 00-open5g-gitops.yaml
-#- 00-open5gcore-ns.yaml
-#- 00-open5gran-ns.yaml
+- 01-open5gcore-ns.yaml
+- 01-open5gran-ns.yaml
 - 01-open5gcore-argoapp.yaml
 - 01-open5gran-argoapp.yaml
